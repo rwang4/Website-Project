@@ -1,11 +1,30 @@
 body{
-  background-image: url("image/church_bg.jpg");
+  position: relative;
+  background: url("image/fullscreen\ bg.png");
+  background-position: top right;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: fill;
 }
 
-footer{
+.header{
+  position: relative;
+  text-align: center;
+}
 
+.title-ch{
+  color: #444;
+  margin: 0;
+  padding: 0px 0px 6px 0px;
+  font-size: 51px;
+  line-height: 44px;
+  letter-spacing: -2px;
+  font-weight: bold;
+}
+
+.footer{
+  position: relative;
+  color: #ffffff;
+  text-align: center;
 }
 
 
