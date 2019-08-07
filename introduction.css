@@ -1,30 +1,121 @@
-body{
-  position: relative;
-  background: url("image/fullscreen\ bg.png");
-  background-position: top right;
+body,html{
+  height: 100%;
+}
+
+.bg_image {
+  background-attachment: fixed;
+  /* reference: https://www.w3schools.com/howto/howto_css_blurred_background.asp */
+  /* The image used */
+  background-image: url("image/intro_bg.jpg");
+  /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  /* Add the transparent effect */
+  opacity: 0.4;
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: fill;
+  background-size: cover;
 }
 
 .header{
-  position: relative;
+  position: absolute;
+  /* center in absolute position: https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-element */
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   text-align: center;
+  top: 13%;
 }
 
 .title-ch{
-  color: #444;
-  margin: 0;
+  /* https: //www.w3schools.com/cssref/css3_pr_text-shadow.asp */
+  color: rgba(44, 46, 44, 0.753);
   padding: 0px 0px 6px 0px;
-  font-size: 51px;
-  line-height: 44px;
-  letter-spacing: -2px;
+  margin: 0;
+  font-size: 78px;
+  line-height: 40px;
+  letter-spacing: 2px;
   font-weight: bold;
+  font-family: Georgia,serif;
+  text-shadow: 4px 4px 5px rgb(87, 84, 84);
 }
+
+.title-en{
+  color: rgba(38, 39, 38, 0.753);
+  text-transform: uppercase;
+  margin-top: 40px;
+  letter-spacing: 1px;
+  word-spacing: -2px;
+  font-family: cursive;
+}
+
+.content{
+  position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 30%;
+}
+
+.instruction{
+  margin-bottom: 70px;
+  color: rgba(87, 43, 43, 0.952);
+  font-size: 20px;
+  font-family: "Gill Sans",sans-serif;
+}
+
+.button{
+  color:rgba(87, 43, 43, 0.952);
+  text-decoration: none;
+  margin: 40px;
+  padding: 10px 40px 10px 40px;
+  font-size: 30px;
+  border-style: solid;
+  font-family: system-ui;
+  border-width: 3.4px;
+  border-radius: 15px;
+}
+
+.button:link {
+  
+}
+
+
+.button:hover {
+  color: rgba(139, 125, 125, 0.904);
+  background: #ffffff;
+}
+
 
 .footer{
-  position: relative;
-  color: #ffffff;
+  position: absolute;
+  color: rgba(47, 47, 47, 0.856);
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Georgia,serif;
+  /* make width to fill the page */
+  left: 0;
+  right: 0;
+  font-size: 18px;
+  bottom: 3%;
 }
 
+.ref:link{
+  color: rgba(29, 27, 27, 0.856);
+  text-decoration: none;
+}
 
+.ref:visited{
+  color: rgb(105, 99, 99);
+}
+
+.ref:hover{
+  text-decoration: underline;
+}
