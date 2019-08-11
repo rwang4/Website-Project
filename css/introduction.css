@@ -6,12 +6,12 @@ body,html{
   background-attachment: fixed;
   /* reference: https://www.w3schools.com/howto/howto_css_blurred_background.asp */
   /* The image used */
-  background-image: url("image/intro_bg.jpg");
+  background-image: url("/image/church_bg.jpg");
   /* Add the blur effect */
   filter: blur(2px);
   -webkit-filter: blur(2px);
   /* Add the transparent effect */
-  opacity: 0.4;
+  opacity: 0.6;
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
