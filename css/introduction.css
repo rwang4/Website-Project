@@ -6,7 +6,7 @@ body,html{
   background-attachment: fixed;
   /* reference: https://www.w3schools.com/howto/howto_css_blurred_background.asp */
   /* The image used */
-  background-image: url("/image/church_bg.jpg");
+  background-image: url("/image/intro_bg.jpg");
   /* Add the blur effect */
   filter: blur(2px);
   -webkit-filter: blur(2px);
