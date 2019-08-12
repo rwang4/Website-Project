@@ -8,34 +8,43 @@ function showSlide(n) {
 
 function displaySlides(n){
   var i;
-  var x = document.getElementsByClassName("show_page");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  var slides = document.getElementsByClassName("show_page");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
-  if (n >= x.length) {
+  if (n >= slides.length) {
     slideIndex = 0;
   }
   if (n < 0) {
-    slideIndex = x.length - 1;
+    slideIndex = slides.length - 1;
   }
-  x[slideIndex].style.display = "table-cell";
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex].style.display = "inline-block";
+  dots[slideIndex].className += " active";
 }
 
 // auto display
 function carousel() {
   var i;
-  var x = document.getElementsByClassName("show_page");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  var slides = document.getElementsByClassName("show_page");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
-  if (slideIndex >= x.length) {
+  if (slideIndex >= slides.length) {
     slideIndex = 0;
   }
   if (slideIndex < 0) {
-    slideIndex = x.length - 1;
+    slideIndex = slides.length - 1;
   }
-  x[slideIndex].style.display = "block";
-  console.log(slideIndex);
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex].style.display = "inline-block";
+  dots[slideIndex].className += " active";
   slideIndex++;
   setTimeout(carousel, 9000);
 }
