@@ -11,7 +11,7 @@ html, body {
   height: 100px;
   z-index: 1;
   top: 0;
-  background: pink;
+  background: red;
 }
 
 .nav_logo {
@@ -69,7 +69,7 @@ html, body {
 .slideshow {
   position: relative;
   display: table;
-  z-index: auto;
+  z-index: 0;
   margin: 0;
   padding: 0;
   top: 100px;
@@ -80,7 +80,6 @@ html, body {
 
 .show_page {
   position: absolute;
-  display: none;
   vertical-align: middle;
   text-align: center;
   line-height: 40px;
@@ -105,6 +104,7 @@ html, body {
 }
 
 .dot {
+  position: relative;
   cursor: pointer;
   width: 15px;
   height: 15px;
@@ -162,5 +162,25 @@ html, body {
   to {
     opacity: 1;
   }
+}
+
+.contact {
+  position: fixed;
+  right: 1%;
+  top: 50%;
+  -webkit-transform: translate(-1%, -50%);
+          transform: translate(-1%, -50%);
+  background: white;
+  z-index: 1;
+  height: 250px;
+  width: 150px;
+  border: 2px, black;
+  border-radius: 15%;
+  border-style: solid;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
 }
 /*# sourceMappingURL=main_ch.css.map */

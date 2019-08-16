@@ -9,7 +9,7 @@ function showSlide(n) {
 
 // slideshow button lead to direct pages
 // reference: https: //www.w3schools.com/howto/howto_js_slideshow.asp
-function displaySlides(n){
+function displaySlides(n) {
   var i;
   var slides = document.getElementsByClassName("show_page");
   var dots = document.getElementsByClassName("dot");
@@ -25,7 +25,7 @@ function displaySlides(n){
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex].style.display = "inline-block";
+  slides[slideIndex].style.display = "table-cell";
   dots[slideIndex].className += " active";
 }
 
@@ -43,7 +43,7 @@ function carousel() {
   if (slideIndex < 0) {
     slideIndex = slides.length - 1;
   }
-  slides[slideIndex].style.display = "inline-block";
+  slides[slideIndex].style.display = "table-cell";
   // matching pages with corresponding button
   // reference: https: //w3schools.com/howto/howto_js_active_element.asp
   for (i = 0; i < dots.length; i++) {
