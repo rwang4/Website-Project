@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   padding: 0;
   margin: 0;
@@ -118,7 +119,8 @@ html, body {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -180,7 +182,33 @@ html, body {
 }
 
 .footer {
-  position: relative;
+  position: fixed;
+  display: block;
+  bottom: 0;
+  margin-bottom: 56px;
   width: 100%;
+  z-index: -1;
+}
+
+.leftblock {
+  position: relative;
+  display: block;
+  float: left;
+  left: 2%;
+  height: 472px;
+  width: 43%;
+  padding: 0px 30px 0px 30px;
+  margin-bottom: 30px;
+}
+
+.rightblock {
+  position: relative;
+  display: block;
+  float: right;
+  right: 2%;
+  height: 472px;
+  width: 43%;
+  padding: 0px 30px 0px 30px;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=main_ch.css.map */

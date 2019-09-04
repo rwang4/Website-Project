@@ -1,14 +1,16 @@
-$nav_font: "Gill Sans",sans-serif;
+$nav_font: "Gill Sans",
+sans-serif;
 $nav_color: white;
 
-html, body{
+html,
+body {
   height: 100%;
   padding: 0;
   margin: 0;
 }
 
 // style for header
-.header{
+.header {
   position: fixed;
   margin: 0;
   width: 100%;
@@ -19,7 +21,7 @@ html, body{
 }
 
 // logo not added!!
-.nav_logo{
+.nav_logo {
   margin: 0;
   padding: 0;
   float: left;
@@ -32,7 +34,7 @@ html, body{
   height: 100%;
 }
 
-.nav_header a{
+.nav_header a {
   display: table;
   height: 100%;
   margin: 0px 15px 0px 0px;
@@ -49,31 +51,31 @@ html, body{
   color: $nav_color;
 }
 
-.nav_header a:first-child{
+.nav_header a:first-child {
   background: #000;
   border-style: solid;
   border-width: 3px;
   border-color: $nav_color;
 }
 
-.nav_header a:last-child{
+.nav_header a:last-child {
   margin-right: 0;
 }
 
 // when button selected
-.nav_header a:hover{
+.nav_header a:hover {
   border-style: solid;
   border-width: 3px;
   border-color: $nav_color;
 }
 
-.nav_header a li{
+.nav_header a li {
   display: table-cell;
   vertical-align: middle;
 }
 
 // styles for slide show
-.slideshow{
+.slideshow {
   position: relative;
   display: table;
   z-index: 0;
@@ -85,7 +87,7 @@ html, body{
   background: red;
 }
 
-.show_page{
+.show_page {
   position: absolute;
   vertical-align: middle;
   text-align: center;
@@ -95,17 +97,17 @@ html, body{
   // fading animation added reference: https: //www.w3schools.com/w3css/4/w3.css
   // animation: fading 10s infinite;
   // opac animation added reference: https: //www.w3schools.com/w3css/4/w3.css
-  animation:opac 3s;
+  animation: opac 3s;
 }
 
 .dots {
   // display bottom middle
-  position:absolute;
-  left:50%;
+  position: absolute;
+  left: 50%;
   bottom: 0%;
-  transform:translate(-50%, 0%);
-  -ms-transform:translate(-50%, 0%);
-  
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -113,7 +115,7 @@ html, body{
   text-align: center;
 }
 
-.dot{
+.dot {
   position: relative;
   cursor: pointer;
   width: 15px;
@@ -127,7 +129,8 @@ html, body{
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -145,6 +148,7 @@ html, body{
     opacity: 0;
   }
 }
+
 @keyframes opac {
   from {
     opacity: 0;
@@ -156,11 +160,11 @@ html, body{
 }
 
 // floating contact bar
-.contact{
+.contact {
   position: fixed;
   right: 1%;
-  top:50%;
-  transform: translate(-1%,-50%);
+  top: 50%;
+  transform: translate(-1%, -50%);
   background: white;
   z-index: 1;
   height: 250px;
@@ -170,7 +174,35 @@ html, body{
   border-style: solid;
 }
 
-.footer{
-  position: relative;
+.footer {
+  position: fixed;
+  display: block;
+  bottom: 0;
+  margin-bottom: 56px;
   width: 100%;
+  z-index: -1;
+}
+
+
+.leftblock {
+  position: relative;
+  display: block;
+  float: left;
+  left: 2%;
+  height: 472px;
+  width: 43%;
+  padding: 0px 30px 0px 30px;
+  margin-bottom: 30px;
+}
+
+.rightblock {
+  position: relative;
+  display: block;
+  float: right;
+  right: 2%;
+  height: 472px;
+  width: 43%;
+  padding: 0px 30px 0px 30px;
+  margin-bottom: 30px;
+
 }
