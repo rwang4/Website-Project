@@ -7,22 +7,27 @@ body {
 
 .header {
   position: fixed;
+  display: block;
   margin: 0;
   width: 100%;
   height: 100px;
   z-index: 1;
   top: 0;
-  background: red;
+  background: #a04545;
 }
 
 .nav_logo {
-  margin: 0;
-  padding: 0;
+  position: relative;
   float: left;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 10%;
+  padding: 0;
 }
 
 .nav_header {
-  float: right;
+  position: relative;
+  float: left;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -30,15 +35,15 @@ body {
 
 .nav_header a {
   display: table;
-  height: 100%;
-  margin: 0px 15px 0px 0px;
+  height: 80%;
+  margin: 10px 30px 0px 0px;
   float: left;
-  padding: 0px 30px;
+  padding: 0px 15px;
   text-decoration: none;
   font-family: "Gill Sans", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 15px;
+  font-size: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
   line-height: 1em;
@@ -46,20 +51,13 @@ body {
 }
 
 .nav_header a:first-child {
-  background: #000;
   border-style: solid;
   border-width: 3px;
-  border-color: white;
-}
-
-.nav_header a:last-child {
-  margin-right: 0;
+  border-color: rgba(2, 11, 22, 0.418);
 }
 
 .nav_header a:hover {
-  border-style: solid;
-  border-width: 3px;
-  border-color: white;
+  color: rgba(2, 11, 22, 0.418);
 }
 
 .nav_header a li {
@@ -67,25 +65,87 @@ body {
   vertical-align: middle;
 }
 
+.nav_bar {
+  position: relative;
+  height: 100%;
+  float: right;
+  padding: 0;
+}
+
+.nav_bar p {
+  position: relative;
+  right: 25%;
+  margin-bottom: 0px;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1em;
+  color: white;
+}
+
+.nav_bar p a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav_bar p a:hover {
+  color: rgba(2, 11, 22, 0.418);
+}
+
+.fa {
+  position: relative;
+  top: 25%;
+  padding: 10px;
+  font-size: 70px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  right: 15%;
+  color: white;
+}
+
+.fa-wechat {
+  right: 15%;
+  color: white;
+}
+
+.main-content {
+  position: relative;
+  top: 100px;
+}
+
 .slideshow {
   position: relative;
-  display: table;
+  display: block;
   z-index: 0;
   margin: 0;
   padding: 0;
-  top: 100px;
   width: 100%;
   height: 550px;
-  background: red;
+  background: #2c1db3;
 }
 
 .show_page {
   position: absolute;
   vertical-align: middle;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+  margin: 0 auto;
   text-align: center;
   line-height: 40px;
-  height: 100%;
-  width: 100%;
   -webkit-animation: opac 3s;
           animation: opac 3s;
 }
@@ -181,13 +241,186 @@ body {
   border-style: solid;
 }
 
+.section_one {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 800px;
+  background: #dfdfdf;
+}
+
+.section_one h1 {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 70px;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  position: relative;
+  text-align: center;
+}
+
+.one {
+  position: relative;
+  float: left;
+  margin-top: 10%;
+  height: 450px;
+  border-style: solid;
+  border-width: 1%;
+  border-color: white;
+}
+
+.a1 {
+  width: 25%;
+  margin-left: 10%;
+  margin-right: 2%;
+}
+
+.a2 {
+  width: 25%;
+  margin-right: 2%;
+}
+
+.a3 {
+  width: 25%;
+  margin-right: 6.5%;
+}
+
+.section_two {
+  position: relative;
+  padding: 0;
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 400px;
+  background: #c2cf79;
+}
+
+.section_two h1 {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 70px;
+  letter-spacing: 2px;
+  position: relative;
+  text-align: center;
+}
+
+.section_three {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: table;
+  clear: both;
+  width: 90%;
+  height: 1320px;
+  padding: 3% 5% 3% 5%;
+  background: white;
+}
+
+.three {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+
+.events {
+  width: 50%;
+  height: 100%;
+}
+
+.events h1 {
+  position: relative;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 10%;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 40px;
+  letter-spacing: 1px;
+  color: #9c3939;
+}
+
+.event {
+  position: relative;
+  height: 22%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+  background: #f0f0f0;
+}
+
+.posts {
+  width: 50%;
+  height: 100%;
+}
+
+.posts h1 {
+  position: relative;
+  margin-left: 10%;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 40px;
+  letter-spacing: 1px;
+  color: #9c3939;
+}
+
+.post {
+  position: relative;
+  height: 22%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+  background: #f0f0f0;
+}
+
+.section_three button {
+  position: absolute;
+  border: none;
+  color: white;
+  padding: 12px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: black;
+  border: 2px solid #f44336;
+  border-radius: 6px;
+  left: 3%;
+  bottom: 3%;
+}
+
+.section_three button:hover {
+  background: #fd6969;
+}
+
 .footer {
+  height: 558px;
+  z-index: -3;
+}
+
+.informations {
   position: fixed;
   display: block;
   bottom: 0;
   margin-bottom: 56px;
   width: 100%;
-  z-index: -1;
+  background: #dfdfdf;
+  z-index: -2;
 }
 
 .leftblock {
@@ -197,7 +430,7 @@ body {
   left: 2%;
   height: 472px;
   width: 43%;
-  padding: 0px 30px 0px 30px;
+  padding: 0px 50px 0px 50px;
   margin-bottom: 30px;
 }
 
@@ -208,7 +441,28 @@ body {
   right: 2%;
   height: 472px;
   width: 43%;
-  padding: 0px 30px 0px 30px;
+  padding: 0px 50px 0px 50px;
   margin-bottom: 30px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+footer {
+  position: fixed;
+  display: block;
+  bottom: 0;
+  height: 56px;
+  width: 100%;
+  background: #2e2e2e;
+  z-index: -1;
+  text-align: center;
+  color: #cccccc;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-style: italic;
 }
 /*# sourceMappingURL=main_ch.css.map */
